@@ -33,7 +33,7 @@ do {
       //Cálculo del valor final estimado por la cantidad de internas especificada
       const precioWeb = cantidadInternas * precioInterna;
       alert(
-        `El valor estimado de tu sitio web con ${cantidadInternas} páginas internas es de ${precioWeb}`
+        `El valor estimado de tu sitio web con ${cantidadInternas} páginas internas es de $${precioWeb.toLocaleString()} pesos colombianos`
       );
 
       break;
@@ -64,15 +64,15 @@ do {
       //Condicional para identificar el precio final del mantenimiento basado en la decisión de mantenimiento mensual o anual que elija el cliente
       if (tipoMantenimiento == "mensual") {
         alert(
-          `El mes de mantenimiento de tu web tiene un costo de ${
-            mantenimientoMensual * cantidadInternas
-          } pesos`
+          `El mes de mantenimiento de tu web tiene un costo de $${
+            (mantenimientoMensual * cantidadInternas).toLocaleString()
+          } pesos colombianos`
         );
       } else {
         alert(
-          `El año de mantenimiento de tu web tiene un costo de ${
-            mantenimientoAnual * cantidadInternas
-          } pesos`
+          `El año de mantenimiento de tu web tiene un costo de $${
+            (mantenimientoAnual * cantidadInternas).toLocaleString()
+          } pesos colombianos`
         );
       }
       break;
@@ -103,10 +103,10 @@ do {
         valorHora = 35000;
 
         alert(
-          `Por contratar 5 o más horas, tienes un descuento de 5000 en cada hora de clase. El valor total de tus clases sería de ${valorClases}`
+          `Por contratar 5 o más horas, tienes un descuento de $servicios5,000 en cada hora de clase. El valor total de tus clases sería de $${valorClases.toLocaleString()} pesos colombianos`
         );
       } else {
-        alert(`El valor total de tus clases sería de ${valorClases}`);
+        alert(`El valor total de tus clases sería de $${valorClases.toLocaleString()} pesos colombianos`);
       }
       break;
 
