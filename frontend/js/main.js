@@ -103,7 +103,7 @@ do {
         valorHora = 35000;
 
         alert(
-          `Por contratar 5 o más horas, tienes un descuento de $servicios5,000 en cada hora de clase. El valor total de tus clases sería de $${valorClases.toLocaleString()} pesos colombianos`
+          `Por contratar 5 o más horas, tienes un descuento de $5,000 en cada hora de clase. El valor total de tus clases sería de $${valorClases.toLocaleString()} pesos colombianos`
         );
       } else {
         alert(`El valor total de tus clases sería de $${valorClases.toLocaleString()} pesos colombianos`);
